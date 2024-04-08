@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculator {
+            background-color: #37383C;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #display-box {
+            background-color: #A2B077;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+        }
+        .button-grid button {
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            background-color: #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button-grid button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1 style="color: white;">Calculator</h1>
+        <div id="display-box"></div>
+        <div class="button-grid">
+            <button onclick="showValue(this)">1</button>
+            <button onclick="showValue(this)">2</button>
+            <button onclick="showValue(this)">3</button>
+            <button onclick="showValue(this)" style="background-color: #100B0D; color: white;">+</button>
+            <button onclick="showValue(this)">4</button>
+            <button onclick="showValue(this)">5</button>
+            <button onclick="showValue(this)">6</button>
+            <button onclick="showValue(this)" style="background-color: #100B0D; color: white;">-</button>
+            <button onclick="showValue(this)">7</button>
+            <button onclick="showValue(this)">8</button>
+            <button onclick="showValue(this)">9</button>
+            <button onclick="showValue(this)" style="background-color: #100B0D; color: white;">*</button>
+            <button onclick="showValue(this)">0</button>
+            <button onclick="showValue(this)" style="background-color: #AB4D50;">x</button>
+            <button onclick="calculateResult()" style="background-color: #F15A28;">=</button>
+            <button onclick="showValue(this)" style="background-color: #100B0D; color: white;">/</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

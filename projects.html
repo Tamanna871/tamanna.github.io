@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0; /* Remove margin bottom */
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 33.33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  height: 100%;
+}
+
+.container {
+  padding: 0 16px;
+  height: 60%;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  margin-bottom: 0; /* Remove margin bottom */
+}
+</style>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="about.html">About Me</a>
+        
+        <a href="contact.html">Contact</a>
+     </div>
+    <div>
+
+        <h2 style="text-align:center; color: black; font-size:24px; font-weight:bold; margin-top:20px;">My Projects</h2>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="image/amclopic.JPG" alt="Amazon Clone" style="width:100%; height: 242px;">
+              <div class="container">
+                <h2>Amazon clone</h2>
+                <p class="title">Developed a homepage for an Amazon clone using HTML and CSS, focusing on
+                  replicating the visual style of the platform. Employed JavaScript for essential
+                  homepage functionality.</p>
+              
+                <p><button class="button"><a href="amazon_clone/index.html" target="_blank">Website link</a></button></p>
+      
+              </div>
+            </div>
+          </div>
+      
+          <div class="column">
+            <div class="card">
+              <img src="image/agecal.JPG" alt="Age Calculator" style="width:100%; height: 264px;">
+              <div class="container">
+                <h2>Age Calculator</h2>
+                <p class="title">Built an age calculator application with HTML, CSS, and JavaScript, showcasing
+                  frontend development skills and practical problem-solving abilities.</p>
+              
+                <p><button class="button"><a href="age calculator/index.html" target="_blank">Website link</a></button></p>
+      
+              </div>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <img src="image/calc.JPG" alt="Calculator" style="width:100%; height: 264px;">
+              <div class="container">
+                <h2>Calculator</h2>
+                <p class="title">Created a simple calculator application using HTML, CSS, and JavaScript.
+                  Demonstrates proficiency in frontend development and logical problem-solving.</p>
+              
+                <p><button class="button"><a href="calculator/index.html" target="_blank">Website link</a></button></p>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+
+          <div class="column">
+            <div class="card">
+              <img src="image/portfolio.JPG" alt="Portfolio Website" style="width:100%; height: 242px;">
+              <div class="container">
+                <h2>Portfolio Website</h2>
+                <p class="title">Designed and developed a personal portfolio website, featuring an organized
+                  structure with an 'About Me' section and a list of projects, each with direct links. The
+                  portfolio serves as a platform to present work and skills as a Frontend Developer.</p>
+              
+                <p><button class="button"><a href="index.html" target="_blank">Website link</a></button></p>
+      
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="column">
+            <div class="card">
+              <img src="image/handdigit.JPG" alt="Handwritten Digit Recognition Image" style="width:100%; height: 278px;">
+              <div class="container">
+                <h2 style="font-size: 18px">Handwritten Digit Recognition by Using Machine Learning & Deep Learning</h2>
+                <p class="title">Developed a Handwritten digit recognition system using CNN and OpenCV, achieving
+                  99% accuracy on MNIST and real-world digit images.</p>
+              
+                <p><button class="button"><a href="https://colab.research.google.com/drive/1h85aJuK2OXFbBdVwM3tF3LI5h7ywfcoR?usp=sharing" target="_blank">Project link</a></button></p>
+      
+              </div>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <img src="image/youtube.JPG" alt="YouTube Channel" style="width:100%; height: 242px;">
+              <div class="container">
+                <h2>YouTube Channel - "Solutions"</h2>
+                <p class="title">Create and upload educational videos and solutions to problems successfully tackled
+                  during my academic semesters.</p>
+              
+                <p><button class="button"><a href="https://www.youtube.com/channel/UCin78ZS3wxdOjxXIvjpzzjg" target="_blank">Channel link</a></button></p>
+      
+              </div>
+            </div>
+          </div>
+         
+      
+        </div>
+        
+      
+      </div>
+
+      <footer class="w3-container w3-center w3-margin-top">
+        <p>Created by <a href="index.html" target="_blank">Tamanna Kawser Chowdhury</a></p>
+      </footer>
+      
+
+
+</body>
+</html>
